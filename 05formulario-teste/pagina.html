@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Pesquisa - Cuide+</title>
+    <link rel="stylesheet" href="/styles.css"> <!-- Arquivo CSS separado -->
+</head>
+<body>
+    <header>
+        <h1>Formulário de Pesquisa para Avaliar a Viabilidade do Aplicativo "Cuide+"</h1>
+    </header>
+    <div class="container">
+        <p>O aplicativo "Cuide+" tem como objetivo criar grupos para a doação de sangue e realização de exames de saúde, além de promover conscientização sobre questões de saúde. Esta pesquisa tem como objetivo avaliar a viabilidade dessa ideia e determinar se as pessoas estão dispostas a participar de grupos para essas atividades. Suas respostas são anônimas, e você pode desistir a qualquer momento. Seu feedback é valioso para o desenvolvimento deste aplicativo.</p>
+        <form>
+            <div>
+                <label for="idade">1. Idade:</label>
+                <input type="text" id="idade" name="idade">
+            </div>
+
+            <div>
+                <label for="genero">2. Gênero:</label>
+                <input type="radio" id="genero_masculino" name="genero" value="Masculino">
+                <label for="genero_masculino">Masculino</label>
+                <input type="radio" id="genero_feminino" name="genero" value="Feminino">
+                <label for="genero_feminino">Feminino</label>
+                <input type="radio" id="genero_outro" name="genero" value="Outro">
+                <label for="genero_outro">Outro</label>
+            </div>
+
+            <div>
+                <label for="atualizacoes">3. Você gostaria de receber atualizações sobre o desenvolvimento do aplicativo "Cuide+"?</label>
+                <input type="radio" id="atualizacoes_sim" name="atualizacoes" value="Sim">
+                <label for="atualizacoes_sim">Sim</label>
+                <input type="radio" id="atualizacoes_nao" name="atualizacoes" value="Não">
+                <label for="atualizacoes_nao">Não</label>
+            </div>
+
+            <div>
+                <label for="doacao_sangue">4. Você já doou sangue anteriormente?</label>
+                <input type="radio" id="doacao_sangue_sim" name="doacao_sangue" value="Sim">
+                <label for="doacao_sangue_sim">Sim</label><br>
+                <input type="radio" id="doacao_sangue_nao" name="doacao_sangue" value="Não">
+                <label for="doacao_sangue_nao">Não</label><br>
+                <input type="radio" id="doacao_sangue_interesse" name="doacao_sangue" value="Interesse">
+                <label for="doacao_sangue_interesse">Não, mas tenho interesse em doar</label><br>
+            </div>
+
+            <div>
+                <label for="participou_grupos">5. Você já participou de grupos para doação de sangue ou atividades de saúde?</label>
+                <input type="radio" id="participou_grupos_sim" name="participou_grupos" value="Sim">
+                <label for="participou_grupos_sim">Sim</label>
+                <input type="radio" id="participou_grupos_nao" name="participou_grupos" value="Não">
+                <label for="participou_grupos_nao">Não</label>
+                <input type="radio" id="participou_grupos_interesse" name="participou_grupos" value="Interesse">
+                <label for="participou_grupos_interesse">Não, mas estaria disposto(a) a participar</label>
+            </div>
+
+            <div>
+                <label>6. Que tipo de atividades de saúde você consideraria fazer em grupo? (Escolha todas as que se aplicam)</label>
+                <input type="checkbox" id="atividade_doacao_sangue" name="atividades" value="Doação de Sangue">
+                <label for="atividade_doacao_sangue">Doação de Sangue</label><br>
+                <input type="checkbox" id="atividade_exames_saude" name="atividades" value="Realização de Exames de Saúde">
+                <label for="atividade_exames_saude">Realização de Exames de Saúde (ex.: testes de ISTs, colesterol, glicemia)</label><br>
+                <input type="checkbox" id="atividade_palestras" name="atividades" value="Palestras ou Eventos de Conscientização">
+                <label for="atividade_palestras">Palestras ou Eventos de Conscientização</label><br>
+                <input type="checkbox" id="atividade_outro" name="atividades" value="Outro">
+                <label for="atividade_outro">Outro (por favor, especifique)</label><br>
+            </div>
+
+            <div>
+                <label for="motivacao_grupo">7. Você acredita que se sentiria mais motivado(a) a doar sangue ou fazer exames de saúde se estivesse em um grupo com outras pessoas?</label>
+                <input type="radio" id="motivacao_grupo_sim" name="motivacao_grupo" value="Sim">
+                <label for="motivacao_grupo_sim">Sim</label>
+                <input type="radio" id="motivacao_grupo_nao" name="motivacao_grupo" value="Não">
+                <label for="motivacao_grupo_nao">Não</label>
+                <input type="radio" id="motivacao_grupo_talvez" name="motivacao_grupo" value="Talvez">
+                <label for="motivacao_grupo_talvez">Talvez</label>
+            </div>
+
+            <div>
+                <label>8. Quais dos seguintes recursos do aplicativo "Cuide+" você consideraria mais úteis? (Escolha até três)</label>
+                <input type="checkbox" id="recurso_marcar_encontros" name="recursos" value="Marcar encontros para doação de sangue ou exames em grupo">
+                <label for="recurso_marcar_encontros">Marcar encontros para doação de sangue ou exames em grupo</label><br>
+                <input type="checkbox" id="recurso_lembretes" name="recursos" value="Receber lembretes para doar sangue ou fazer exames">
+                <label for="recurso_lembretes">Receber lembretes para doar sangue ou fazer exames</label><br>
+                <input type="checkbox" id="recurso_conscientizacao" name="recursos" value="Acesso a informações de conscientização sobre saúde">
+                <label for="recurso_conscientizacao">Acesso a informações de conscientização sobre saúde</label><br>
+                <input type="checkbox" id="recurso_acompanhamento" name="recursos" value="Acompanhamento da sua saúde pessoal (lembretes de medicamentos, agendamento de consultas)">
+                <label for="recurso_acompanhamento">Acompanhamento da sua saúde pessoal (lembretes de medicamentos, agendamento de consultas)</label><br>
+                <input type="checkbox" id="recurso_compartilhamento" name="recursos" value="Compartilhamento de realizações de saúde com amigos">
+                <label for="recurso_compartilhamento">Compartilhamento de realizações de saúde com amigos</label><br>
+                <input type="checkbox" id="recurso_outro" name="recursos" value="Outro">
+                <label for="recurso_outro">Outro (por favor, especifique)</label><br>
+            </div>
+
+            <div>
+                <label>9. Quais fatores podem influenciar sua decisão de participar de um grupo para doação de sangue ou exames de saúde? (Escolha até três)</label>
+                <input type="checkbox" id="fator_disponibilidade" name="fatores" value="Disponibilidade de grupos próximos à minha localização">
+                <label for="fator_disponibilidade">Disponibilidade de grupos próximos à minha localização</label><br>
+                <input type="checkbox" id="fator_conscientizacao" name="fatores" value="Conscientização sobre a importância da doação de sangue/saúde">
+                <label for="fator_conscientizacao">Conscientização sobre a importância da doação de sangue/saúde</label><br>
+                <input type="checkbox" id="fator_horarios_flexiveis" name="fatores" value="Horários flexíveis para os encontros em grupo">
+                <label for="fator_horarios_flexiveis">Horários flexíveis para os encontros em grupo</label><br>
+                <input type="checkbox" id="fator_acompanhamento_medico" name="fatores" value="Acompanhamento médico profissional durante os encontros">
+                <label for="fator_acompanhamento_medico">Acompanhamento médico profissional durante os encontros</label><br>
+                <input type="checkbox" id="fator_incentivos" name="fatores" value="Incentivos ou recompensas para participação (ex.: camisetas, brindes)">
+                <label for="fator_incentivos">Incentivos ou recompensas para participação (ex.: camisetas, brindes)</label><br>
+                <input type="checkbox" id="fator_outro" name="fatores" value="Outro">
+                <label for="fator_outro">Outro (por favor, especifique)</label>
+            </div>
+
+            <div>
+                <label for="impacto_motivacao">10. Em uma escala de 1 a 5, o quanto você acredita que a doação de sangue e a realização de exames de saúde em grupo podem impactar positivamente sua motivação para cuidar da sua saúde? (1 = Muito Pouco, 5 = Muito)</label>
+                <input type="radio" id="impacto_motivacao_1" name="impacto_motivacao" value="1">
+                <label for="impacto_motivacao_1">1</label>
+                <input type="radio" id="impacto_motivacao_2" name="impacto_motivacao" value="2">
+                <label for="impacto_motivacao_2">2</label>
+                <input type="radio" id="impacto_motivacao_3" name="impacto_motivacao" value="3">
+                <label for="impacto_motivacao_3">3</label>
+                <input type="radio" id="impacto_motivacao_4" name="impacto_motivacao" value="4">
+                <label for="impacto_motivacao_4">4</label>
+                <input type="radio" id="impacto_motivacao_5" name="impacto_motivacao" value="5">
+                <label for="impacto_motivacao_5">5</label>
+            </div>
+
+            <div>
+                <label for="comentario">11. Algum comentário adicional ou sugestões para o aplicativo "Cuide+"?</label>
+                <textarea id="comentario" name="comentario" rows="4"></textarea>
+            </div>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>
+
