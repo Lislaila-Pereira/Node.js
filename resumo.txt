@@ -1,0 +1,43 @@
+Para executar o arquivo 
+-- node nome_do_arquivo
+-- nodemon nome_do_arquivo
+--ctrl+c para "parar" servidor
+
+1. Node.js e Express.js
+--Node.js é uma plataforma que permite executar JavaScript no servidor.
+--Express.js é um framework web para Node.js que simplifica o desenvolvimento de aplicativos web.
+
+2. Módulos (pequenas bibliotecas)
+como exportar um modulo:
+module.exports = {
+    coloca aqui o que deseja exportar;
+}
+como utilizar um modulo:
+var nome_variave; = require('./nome_do_arquivo onde foi definido os modulos');
+
+3. Módulo http (criar um servidor)
+--importar http, criar servidor e definir porta
+var http; = require('./http'); //importar
+    http.createServer(function (req, res) { //criar servidor
+        //codigo
+}).listen(8080); //definiu porta
+
+4. Criar servidor com o Express
+dar um npm i express na pasta do projeto
+importar express, instanciar ele, criar uma rota e definir uma porta
+var express = require('./express');
+var app = express();
+app.get('/', function (req, res) { //criei rota get
+    //codigo;
+})  
+app.listen(8080); //definiu porta
+
+5. Mostar arquivo html 
+utilizar um res.sendFile(__dirname + nome_do_arquivo);
+
+6. Arquivos estáticos 
+--organize os arquivos estaticos, crie uma pasta public para armazenar eles 
+--use o modulo static; app.use(express.static('nome da pasta')); tem que usar antes de definir as rotas 
+--Referencie os arquivos estáticos em seu HTML normalmente. Observe que os caminhos dos arquivos estáticos começam com /, o que indica que eles são relativos à pasta raiz do seu aplicativo, onde você configurou o express.static.
+
+
