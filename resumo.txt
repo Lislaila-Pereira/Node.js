@@ -40,4 +40,9 @@ utilizar um res.sendFile(__dirname + nome_do_arquivo);
 --use o modulo static; app.use(express.static('nome da pasta')); tem que usar antes de definir as rotas 
 --Referencie os arquivos estáticos em seu HTML normalmente. Observe que os caminhos dos arquivos estáticos começam com /, o que indica que eles são relativos à pasta raiz do seu aplicativo, onde você configurou o express.static.
 
+7.body Parser
+é usado para analisar os dados enviados no corpo de solicitações HTTP, como solicitações POST e PUT. Ele é utilizado para extrair dados enviados pelo cliente no corpo da solicitação e torná-los acessíveis no formato JavaScript.
+--O body-parser.json() é usado para analisar solicitações com dados no formato JSON
+--o body-parser.urlencoded({ extended: false }) é usado para analisar dados no formato de formulário HTML.
+
 
